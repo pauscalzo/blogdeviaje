@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,300;0,400;0,600;0,700;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    padding: 60px 90px;
+}
+
+a {
+    text-decoration: none;
+    color: #0e0e0e;
+}
+
+/* estilos para el texto y headings */
+
+p {
+    color: #353535;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.2rem;
+}
+
+h1 {
+    color: #0e0e0e;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 4rem;
+}
+
+h2 {
+    color: #ffffff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 3.5rem;
+}
+
+h3 {
+    color: #0e0e0e;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 2rem;
+    font-style: italic;
+    text-align: center;
+    padding: 15px 0px 30px 0px;
+}
+
+h4 {
+    color: #ffffff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 2rem;
+}
+
+h5 {
+    color: #0e0e0e;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2rem;
+    text-transform: uppercase;
+}
+
+.separador {
+    display:inline-block;
+    width: 80px;
+    border-bottom: 5px solid #0e0e0e;
+}
+
+.align-c {
+    text-align: center;
+}
+
+/* padding  */
+
+.p-b-10 {
+    padding-bottom: 10px;
+}
+
+.p-b-20 {
+    padding-bottom: 20px;
+}
+
+.p-b-30 {
+    padding-bottom: 30px;
+}
+
+.p-t-10 {
+    padding-top: 10px;
+}
+
+.p-t-20 {
+    padding-top: 20px;
+}
+
+.p-t-30 {
+    padding-top: 30px;
+}
+
+/* estilos para el header  */
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 90px;
+    background-color: aliceblue;
+    
+}
+
+.header-right {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img{
+    height: 80px;
+    width: auto;
+}
+
+.nav-menu ul{
+    margin-bottom: 0px;
+}
+.nav-menu li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 15px;
+    text-transform: uppercase;
+    font-family:'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+}
+
+.nav-menu li a{
+    color: #5c5b5b;
+}
+
+.redes img{
+    height: 25px;
+    width: auto;
+    padding: 0px 5px;
+}
+
+/* estilos para slider  */
+
+.slider img {
+    width: 100%;
+}
+
+/* estilos para nosotros  */
+
+.columnas-nosotros {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.columnas-nosotros p{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+}
+
+.nosotros {
+    background-color: aliceblue;
+}
+
+/* estilos para ranking  */
+
+.boton {
+    display:inline-block;
+    background-color: #00b0f4;
+    border: 1px solid #20167c;
+    border-radius: 5px;
+    padding: 10px 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.boton a{
+    color: #ffffff;
+}
+
+.columnas-ranking {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0px;
+}
+
+.ranking { 
+    background-color: #1e1d1d;
+}
+
+/* estilos para blog  */
+
+.columnas-blog {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.item-blog{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+}
+
+.item-blog img{
+    height: 300px;
+    width:auto;
+}
+
+.item-blog a{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #00b0f4; 
+}
+
+
+/* estilos para footer  */
+
+.footer {
+    background-color: #1e1d1d;
+    border-top: 3px solid #00b0f4;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: top;
+    justify-content: space-between;
+}
+
+.footer-logo img{
+    display:inline-block;
+    height: 100px;
+    width: auto;
+}
+
+.footer h5 {
+    color: #ffffff;
+}
+
+.redes-footer img{
+    display:inline-block;
+    height: 30px;
+    width: auto;
+    padding-right: 5px;
+}
+
+.footer a {
+    color: #ffffff;
+}
+
+.footer li{
+    list-style-type: none;
+    font-family:'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+}
+
+.copy {
+    text-align: center;
+    background-color: #00b0f4;
+    padding: 4px;
+}
+
+.copy p {
+    color: #ffffff;
+    font-weight: 400;
+}
