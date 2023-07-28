@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
     <title>Home</title>
@@ -20,25 +21,41 @@
 <!-- fin logo del sitio -->
 
 <!-- inicio menú de navegación -->
-            <div class="header-right">
-                
-                <nav class="nav-menu">
-                    <ul>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="./nosotros.html">Nosotros</a></li>
-                        <li><a href="./lugares.html">Lugares</a></li>
-                        <li><a href="./ranking.html">Ranking</a></li>
-                        <li><a href="./blog.html">Blog</a></li>
-                    </ul>
-                </nav>  
-                
+            <div class="header-right">            
+                <nav class="navbar navbar-expand-lg bg-body-tertiary nav-menu">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./lugares.html">Lugares</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./ranking.html">Ranking</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="./blog.html">Blog</a>
+                                    </li>
+                                </ul>
+                            </div>
+                    </div>
+                </nav>   
+
                 <div class="redes">
                     <a href="facebook.com"><img src="../img/facebook-black.png" alt="Facebook"></a>
                     <a href="instagram.com"><img src="../img/instagram-black.png" alt="Instagram"></a>
                 </div>
             </div>
 <!-- fin menú de navegación -->
-
         </div>
     </header>
 <!-- fin header -->   
@@ -48,83 +65,82 @@
 
 <!-- inicio section banner -->
         <section>
-            <img src="../img/banner.png" alt="dominica">
+            <div class="banner">
+                <img src="../img/banner.png" alt="dominica">
+            </div>
         </section>
 <!-- fin section banner -->
 
 <!-- inicio sección blog -->
         <section>
-
+            <div class="align-c p-t-30">
+                <h1>Blog</h1>
+                <div class="separador"></div>
+                <h3>Enterate de nustras últimas novedades.</h3>
+            </div>
 <!-- inicio sección contenido del blog -->
-            <div>
-                <div class="align-c p-b-30 p-t-30">
-                    <h1>Blog</h1>
-                    <div class="separador"></div>
-                    <h3>Enterate de nustras últimas novedades.</h3>
+            <div class="contenedor blog">
+                <div class="contenido">
+                        <div class="p-b-30">
+                            <img src="../img/blog-bahamas-grande.png" alt="Bahamas">
+                            <h5 class="p-b-10">3 lugares que no podes dejar de visitar en Bahamas.</h5>
+                            <p>Fuimos en varias oportunidades a Bahamas. Te contamos los 3 lugares que no podes dejar de visitar.</p>
+                            <a href="#">Ver más</a>
+                        </div>
+                        <div class="p-b-30">
+                            <img src="../img/blog-crucero-grande.png" alt="crucerodisney">
+                            <h5 class="p-b-10">Todos los tips para tu crucero Disney.</h5>
+                            <p>Silver Members de Crucero Disney y hasta ser gold no paramos! Todos los tips en este post.</p>
+                            <a href="#">Ver más</a>
+                        </div>
+                        <div class="p-b-30">
+                            <img src="../img/blog-grandpalladium-grande.png" alt="grandpalladium">
+                            <h5 class="p-b-10">Los dos hoteles Grand Palladium que fuimos hasta ahora.</h5>
+                            <p>Los hoteles Grand Palladium son ideales para ir con niños. En este post te contamos los dos que conocemos nosotros.</p>
+                            <a href="#">Ver más</a>
+                        </div>
                 </div>
-                <div>
-                    <div>
-                        <img src="../img/blog-bahamas-grande.png" alt="Bahamas">
-                        <h5>3 lugares que no podes dejar de visitar en Bahamas.</h5>
-                        <p>Fuimos en varias oportunidades a Bahamas. Te contamos los 3 lugares que no podes dejar de visitar.</p>
-                        <a href="#">Ver más</a>
-                    </div>
-                    <div>
-                        <img src="../img/blog-crucero-grande.png" alt="crucerodisney">
-                        <h5>Todos los tips para tu crucero Disney.</h5>
-                        <p>Silver Members de Crucero Disney y hasta ser gold no paramos! Todos los tips en este post.</p>
-                        <a href="#">Ver más</a>
-                    </div>
-                    <div>
-                        <img src="../img/blog-grandpalladium-grande.png" alt="grandpalladium">
-                        <h5>Los dos hoteles Grand Palladium que fuimos hasta ahora.</h5>
-                        <p>Los hoteles Grand Palladium son ideales para ir con niños. En este post te contamos los dos que conocemos nosotros.</p>
-                        <a href="#">Ver más</a>
-                    </div>
-                </div>
-            </div>
-<!-- fin sección contenido del blog -->
+    <!-- fin sección contenido del blog -->
 
-<!-- inicio barra lateral -->
-            <div>
-                <div>
-                    <h5>Últimas Entradas</h5>
-                    <div>
-                        <p>3 lugares que no podes dejar de visitar en Bahamas.</p>
-                        <img src="../img/blog-bahamas-chico.png" alt="">    
+    <!-- inicio barra lateral -->
+                <div class="barra-lateral">
+                    <div class="p-b-30">
+                        <h5 class="p-b-20">Últimas Entradas</h5>
+                        <div class="ultimas-entradas-01 p-b-10">
+                            <div class="texto-ult-entradas-01"><p>3 lugares que no podes dejar de visitar en Bahamas.</p></div>
+                            <div class="img-ult-entradas-01"><a href="#"><img src="../img/blog-bahamas-chico.png" alt=""></a></div>  
+                        </div>
+                        <div class="ultimas-entradas-02 p-b-10">
+                            <div class="texto-ult-entradas-02"><p>Todos los tips para tu crucero Disney.</p></div>
+                            <div class="img-ult-entradas-02"><a href="#"><img src="../img/blog-crucero-chico.png" alt=""></a></div>
+                        </div>
+                        <div class="ultimas-entradas-03 p-b-10">
+                            <div class="texto-ult-entradas-03"><p>Los dos hoteles Grand Palladium que fuimos hasta ahora.</p></div>
+                            <div class="img-ult-entradas-03"><a href="#"><img src="../img/blog-grandpalladium-chico.png" alt=""></a></div>
+                        </div>        
                     </div>
-                    <div>
-                        <p>Todos los tips para tu crucero Disney.</p>
-                        <img src="../img/blog-crucero-chico.png" alt="">
+
+                    <div class="p-b-30 categorias">
+                        <h5 class="p-b-20">Categorías</h5>
+                        <ul>
+                            <li><a href="#">Playas</a></li>
+                            <li><a href="#">Cuidades</a></li>
+                            <li><a href="#">Lugares Exóticos</a></li>
+                            <li><a href="#">Pueblos Pintorescos</a></li>
+                        </ul>
+                    </div>     
+                    
+                    <h5 class="p-b-20">Tags</h5>
+                    <div class="p-b-30 tags">
+                        <p class="cuadro-tag"><a href="#">Disney</a></p>
+                        <p class="cuadro-tag"><a href="#">Con Niños</a></p>
+                        <p class="cuadro-tag"><a href="#">Sin Niños</a></p>
+                        <p class="cuadro-tag"><a href="#">Aventura</a></p>
+                        <p class="cuadro-tag"><a href="#">Relax</a></p>
+                        <p class="cuadro-tag"><a href="#">Historia</a></p>
                     </div>
-                    <div>
-                        <p>Los dos hoteles Grand Palladium que fuimos hasta ahora.</p>
-                        <img src="../img/blog-grandpalladium-chico.png" alt="">
-                    </div>        
                 </div>
-                        
-                <div>
-                    <h5>Categoías</h5>
-                    <ul>
-                        <li>Playas</li>
-                        <li>Cuidades</li>
-                        <li>Lugares Exóticos</li>
-                        <li>Pueblos Pintorescos</li>
-                    </ul>
-                </div>
-                        
-                <div>
-                    <h5>Tags</h5>
-                    <p>Disney</p>
-                    <p>Con Niños</p>
-                    <p>Sin Niños</p>
-                    <p>Aventura</p>
-                    <p>Relax</p>
-                    <p>Historia</p>
-                </div>
-            </div>
-                
-                
+            </div>      
         </section>
 <!-- fin sección blog -->
     </main>
@@ -158,6 +174,6 @@
         </section>
     </footer>
 <!-- fin footer -->
-    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>

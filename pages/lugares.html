@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
     <title>Home</title>
@@ -19,18 +20,35 @@
 <!-- fin logo del sitio -->
 
 <!-- inicio menú de navegación -->
-            <div class="header-right">
-                
-                <nav class="nav-menu">
-                    <ul>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="./nosotros.html">Nosotros</a></li>
-                        <li><a href="./lugares.html">Lugares</a></li>
-                        <li><a href="./ranking.html">Ranking</a></li>
-                        <li><a href="./blog.html">Blog</a></li>
-                    </ul>
-                </nav>  
-                
+            <div class="header-right">            
+                <nav class="navbar navbar-expand-lg bg-body-tertiary nav-menu">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="./lugares.html">Lugares</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./ranking.html">Ranking</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./blog.html">Blog</a>
+                                    </li>
+                                </ul>
+                            </div>
+                    </div>
+                </nav>   
+
                 <div class="redes">
                     <a href="facebook.com"><img src="../img/facebook-black.png" alt="Facebook"></a>
                     <a href="instagram.com"><img src="../img/instagram-black.png" alt="Instagram"></a>
@@ -47,50 +65,65 @@
 
 <!-- inicio section banner -->
         <section>
-            <img src="../img/banner.png" alt="dominica">
+            <div class="banner">
+                <img src="../img/banner.png" alt="dominica">
+            </div>
         </section>
 <!-- fin section banner -->
 
 <!-- inicio sección lugares -->
-        <section>
-            <div class="align-c p-b-30 p-t-30">
+        <section class="contenedor">
+            <div class="align-c p-t-30">
                 <h1>Lugares</h1>
                 <div class="separador"></div>
                 <h3>Les contamos algunos lugares que visitamos.</h3>
             </div>
-            <div>
-                <div>
-                    <img src="../img/lugares-losroques.png" alt="losroques">
-                </div>
-                <div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil quae qui tempora pariatur deleniti? Exercitationem, ullam quae delectus voluptatem deserunt error laudantium dolor, consequuntur eveniet consectetur officiis veniam ratione nam enim suscipit excepturi quasi odio ea? Laboriosam, ab non. In!</p>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil quae qui tempora pariatur deleniti? Exercitationem, ullam quae delectus voluptatem deserunt error laudantium dolor, consequuntur eveniet consectetur officiis veniam ratione nam enim suscipit excepturi quasi odio ea? Laboriosam, ab non. In!</p>
-                </div>
-                <div>
-                    <img src="../img/lugares-manuelantonio.png" alt="">
-                </div>
-            </div>
-            <div>
-                <div>
-                    <img src="../img/lugares-orlando.png" alt="">
-                </div>
-                <div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil quae qui tempora pariatur deleniti? Exercitationem, ullam quae delectus voluptatem deserunt error laudantium dolor, consequuntur eveniet consectetur officiis veniam ratione nam enim suscipit excepturi quasi odio ea? Laboriosam, ab non. In!</p>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil quae qui tempora pariatur deleniti? Exercitationem, ullam quae delectus voluptatem deserunt error laudantium dolor, consequuntur eveniet consectetur officiis veniam ratione nam enim suscipit excepturi quasi odio ea? Laboriosam, ab non. In!</p>
-                </div>
-                <div>
-                    <img src="../img/lugares-paris.png" alt="">
-                </div>
-            </div>
         </section>
+        <div class="grilla lugares-01 contenedor">
+            <div class="lugar01">
+                <img src="../img/lugares-losroques.png" alt="losroques">
+            </div>
+            <div class="texto01">
+                <p>Venezuela tiene un archipiélago que se llama Los Roques. Se llega por avioneta desde el continente. Una vez que llegas a Los Roques (a la isla principal Gran Roque), te encontrás con un pueblito super pintorezco, lleno de posadas. No hay calles, no hay pavimento, y no hay autos.</p>
+                <p>En general las posadas cuentan con las 4 comidas. Te dan el desayuno y la cena en mesitas que tienen sobre la arena. Para el almuerzo te brindan viandas para que te las puedas llevar adonde decidas ir ese día. Hay que tener mucha precaución con el agua ya que sólo podes bañarte en ciertos horarios, al igual que usar electricidad.</p>
+                <p>Cada día te tomás una lancha para que te lleve a las diferentes islas que conforman el archipiélago. En las islas no hay nada! solo naturaleza y vistas paradisíacas. Sin embargo, cada isla tiene su particularidad, por ejemplo, en una hay muchas tortugas marinas. Otras tienen cientos y cientos de caracoles de todos los tamaños y formas y hay otras que permiten que camines largos kilómetros con el agua por las pantorrillas.</p>
+                <p>Es un paraíso sin precedentes y nuestro puesto número 1 en el ranking de playas. Peroooo... nosotros lo hicimos de jóvenes y sin hijos, y es mi más sincera recomendación. La avioneta es muy rudimentaria. Desconozco si hay mucha disponibilidad de farmacias o supermercados bastante necesarios a la hora de viajar con chicos. Por último, y para mí lo más importante, es que las lanchas saltan muchisimo, con lo cual hay que tener muy buen estado físico para agarrarse y no salir volando.</p>
+            </div>
+        </div>
+        <div class="grilla lugares-02 contenedor">
+            <div class="texto02">
+                <p>Manuel Antonio queda en Costa Rica y es un destino obligado si visitas ese país. Nosotros fuimos a Costa Rica sin hijos, y lo recorrimos todo en auto, lo cual súper recomiendo por las vistas hermosas que se ven en el trayecto, además de la cercanía de los lugares.</p>
+                <p>Al llegar a Manuel Antonio te encontras con un pueblo en el medio de montañas, donde todo va en subida y bajada, al llegar al final del trayecto por la calle principal accedes a la playa que es hermosa. Pero mucho más hermoso aún es introducirse en un parque nacional que se encuentra justamente ahí.</p>
+                <p>En el parque nacional primero pasas por un selva donde podés encontrarte muchos animales, como monos ahuyadores, perezosos durmiendo en árboles, etc. Al final del trayecto aparece una playa hermosísima, una bahía, rodeada de vegetación, con aguas cristalinas y arena blanca. Lo más llamativo y pintorezco del lugar son los monos ladrones, que te buscan alimento en tus mochilas, canastas o lo que hallas llevado y te lo roban.</p>
+            </div>
+            <div class="lugar02">
+                <img src="../img/lugares-manuelantonio.png" alt="">
+            </div>
+        </div>
+        <div class="grilla lugares-03 contenedor">
+            <div class="lugar03">
+                <img src="../img/lugares-orlando.png" alt="">
+            </div>
+            <div class="texto03">
+                <p>Orlando es uno de nuestros lugares preferidos y al que queremos volver cuantas veces sea necesario.</p>
+                <p>Es un destino para ir con niños de todas las edades y sin niños también. Siempre tiene su encanto y obviamente su magia. Ahí podes encontrarte con los parques de Disney (Magic Kingdom, Epcot, Hollywood y Animal Kingdom), así como también los parques de Universal (Volcano Bay, Isla Aventura y Universal Estudios). Pero también hay muchos parques más, como Sea World, Legoland, etc.</p>
+                <p>También hay un paseo obligado que es Disney Spring, un shopping abierto, con música en vivo, restaurantes, negocios, entretenimiento y más.</p>
+                <p>Orlando es un punto muy solicitado para hacer compras por sus ofertas, mucho más tentadoras que en Miami. Tiene dos grandes outlets que sin duda vale la pena visitar.</p>
+                <p>En cuanto al alojamiento y comida, hay quienes prefieren alojarse dentro de algún parque y comer dentro de los parques, ya sea con plan de comidas o de manera individual. Sin embargo, a nosotros siempre nos gusto alojarnos en un departamento, dentro de algún complejo, con cocina y así tener la oportunidad de visitar los supermercados, como wallmart, que es un paseo de por sí.</p>
+            </div>
+        </div>
+        <div class="grilla lugares-04 contenedor">
+            <div class="texto04">
+                <p>París fue parte del recorrido de nuestra luna de miel. Una ciudad que nos enamoro por ser tan bella y pintorezca, y tan llena de cultura.</p>
+                <p>Las callecitas, las casas, los puentes a través del Siena parecen postales. Sin duda, un destino para repetir.</p>
+                <p>En París, ademas de apreciar sus hermosas vistas, hay varios lugares que suelen visitarse, como por ejemplo, la torre Eiffel, el museo del Louvre, el Arco de Triunfo, caminar por la calle Champs Elysées, El Sacré Cœur y Montmartre, Notre Dame, etc.</p>
+                <p>La gastronomía es deliciosa, nosotros disfrutamos de pato grillado y también de la famosa raclette, queso fundido sobre diferentes alimentos.</p>
+                <p>Les recomiendo hacer todo caminando o con subtes, ya que es precioso caminar por París y los subtes te conectan con todos los lugares de interés.</p>
+            </div>
+            <div class="lugar04">
+                <img src="../img/lugares-paris.png" alt="">
+            </div>
+        </div>
 <!-- fin sección lugares -->
 
 <!-- inicio sección ranking -->
@@ -144,5 +177,6 @@
         </section>
     </footer>
 <!-- fin footer -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
