@@ -4,10 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../scss/style.css">
+    <link rel="stylesheet" href="../scss/style.css.map">
     <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
-    <title>Home</title>
+    <script src="https://kit.fontawesome.com/aa551d60b0.js" crossorigin="anonymous"></script>
+    <meta name="description" content="Enterate de las últimas novedades en viajes.">
+    <meta name="keywords" content="hoteles grand palladium, cadena de hotel, bahamas, quiero ir a bahamas, viajar a bahamas, crucero disney, disney cruise, Castaway, crucero con niños">
+    <title>Últimas Noticias</title>
 </head>
 <body>
 <!-- inicio header -->
@@ -49,8 +54,8 @@
                             </li>
                         </ul>
                         <div class="redes">
-                            <a href="facebook.com"><img src="../img/facebook-black.png" alt="Facebook"></a>
-                            <a href="instagram.com"><img src="../img/instagram-black.png" alt="Instagram"></a>
+                            <a href="facebook.com"><i class="fa-brands fa-square-facebook fa-xl"></i></a>
+                            <a href="instagram.com"><i class="fa-brands fa-square-instagram fa-xl"></i></a>
                         </div>
                     </div>
                 </div>
@@ -73,8 +78,8 @@
 <!-- fin section banner -->
 
 <!-- inicio sección blog -->
-        <section>
-            <div class="align-c p-t-30">
+        <section class="p-t-30">
+            <div data-aos="fade-up" class="align-c p-t-30">
                 <h2>Blog</h2>
                 <div class="separador"></div>
                 <h4>Enterate de nustras últimas novedades.</h4>
@@ -82,19 +87,19 @@
 <!-- inicio sección contenido del blog -->
             <div class="contenedor blog">
                 <div class="contenido">
-                        <div class="p-b-30">
+                        <div data-aos="fade-down" class="p-b-30">
                             <img src="../img/blog-bahamas-grande.png" alt="Bahamas">
                             <h6 class="p-b-10">3 lugares que no podes dejar de visitar en Bahamas.</h6>
                             <p>Fuimos en varias oportunidades a Bahamas. Te contamos los 3 lugares que no podes dejar de visitar.</p>
                             <a href="#">Ver más</a>
                         </div>
-                        <div class="p-b-30">
+                        <div data-aos="fade-down" class="p-b-30">
                             <img src="../img/blog-crucero-grande.png" alt="crucerodisney">
                             <h6 class="p-b-10">Todos los tips para tu crucero Disney.</h6>
                             <p>Silver Members de Crucero Disney y hasta ser gold no paramos! Todos los tips en este post.</p>
                             <a href="#">Ver más</a>
                         </div>
-                        <div class="p-b-30">
+                        <div data-aos="fade-down" class="p-b-30">
                             <img src="../img/blog-grandpalladium-grande.png" alt="grandpalladium">
                             <h6 class="p-b-10">Los dos hoteles Grand Palladium que fuimos hasta ahora.</h6>
                             <p>Los hoteles Grand Palladium son ideales para ir con niños. En este post te contamos los dos que conocemos nosotros.</p>
@@ -156,8 +161,8 @@
             <div class="col-footer">
                 <h6 class="p-b-20">Seguinos en redes</h6>
                 <div class="redes-footer">
-                    <a href="facebook.com"><img src="../img/facebook.png" alt="Facebook"></a>
-                    <a href="instagram.com"><img src="../img/instagram.png" alt="Instagram"></a>
+                    <a href="facebook.com"><i class="fa-brands fa-square-facebook fa-xl"></i></a>
+                    <a href="instagram.com"><i class="fa-brands fa-square-instagram fa-xl"></i></a>
                 </div>
             </div>
             <div class="col-footer">
@@ -176,5 +181,9 @@
     </footer>
 <!-- fin footer -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>

@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../scss/style.css">
+    <link rel="stylesheet" href="../scss/style.css.map">
     <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
-    <title>Home</title>
+    <script src="https://kit.fontawesome.com/aa551d60b0.js" crossorigin="anonymous"></script>
+    <meta name="description" content="Ranking de las mejores playas y las mejores ciudades para planear tu próximo viaje.">
+    <meta name="keywords" content="mejores ciudades, mejores playas, las 5 mejores playas, las 5 mejores ciudades, la mejor playa, la mejor ciudad">
+    <title>Ranking de Playas y Ciudades</title>
 </head>
 <body>
 <!-- inicio header -->
@@ -48,8 +53,8 @@
                             </li>
                         </ul>
                         <div class="redes">
-                            <a href="facebook.com"><img src="../img/facebook-black.png" alt="Facebook"></a>
-                            <a href="instagram.com"><img src="../img/instagram-black.png" alt="Instagram"></a>
+                            <a href="facebook.com"><i class="fa-brands fa-square-facebook fa-xl"></i></a>
+                            <a href="instagram.com"><i class="fa-brands fa-square-instagram fa-xl"></i></a>
                         </div>
                     </div>
                 </div>
@@ -72,13 +77,13 @@
 <!-- fin section banner -->
 
 <!-- inicio sección ranking -->
-        <section id="ranking">
-            <div class="align-c p-b-30 p-t-30">
+        <section id="ranking" class="p-t-30">
+            <div data-aos="fade-up" class="align-c p-b-30 p-t-30">
                 <h2>Ranking</h2>
                 <div class="separador"></div>
                 <h4>Nuestro top 5 de Lugares.</h4>
             </div>
-            <div class="contenedor lista-ranking playas">
+            <div data-aos="fade-down" class="contenedor lista-ranking playas">
                 <h2>Ranking Playas</h2>
                 <ol>
                     <li>Los Roques - Venezuela</li>
@@ -88,7 +93,7 @@
                     <li>Bridgetown - Barbados</li>
                 </ol>
             </div>
-            <div class="contenedor lista-ranking ciudades">
+            <div data-aos="fade-up" class="contenedor lista-ranking ciudades">
                 <h2>Ranking de Cuidades</h2>
                 <ol>
                     <li>París - Francia</li>
@@ -113,8 +118,8 @@
             <div class="col-footer">
                 <h6 class="p-b-20">Seguinos en redes</h6>
                 <div class="redes-footer">
-                    <a href="facebook.com"><img src="../img/facebook.png" alt="Facebook"></a>
-                    <a href="instagram.com"><img src="../img/instagram.png" alt="Instagram"></a>
+                    <a href="facebook.com"><i class="fa-brands fa-square-facebook fa-xl"></i></a>
+                    <a href="instagram.com"><i class="fa-brands fa-square-instagram fa-xl"></i></a>
                 </div>
             </div>
             <div class="col-footer">
@@ -133,5 +138,9 @@
     </footer>
 <!-- fin footer -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>
