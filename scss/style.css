@@ -65,8 +65,7 @@ h4 {
   font-size: 1.5rem;
   font-weight: 300;
   line-height: 2rem;
-  font-style: italic;
-  text-align: center;
+  font-style: oblique;
   padding: 15px 0px 30px 0px;
 }
 
@@ -90,11 +89,21 @@ h6 {
 .separador {
   display: inline-block;
   width: 80px;
+  border-bottom: 5px solid #ffffff;
+}
+
+.separador-black {
+  display: inline-block;
+  width: 80px;
   border-bottom: 5px solid #0e0e0e;
 }
 
 .align-c {
   text-align: center;
+}
+
+.white {
+  color: #ffffff;
 }
 
 /* padding  */
@@ -191,8 +200,10 @@ h6 {
 }
 
 /* estilos para banner  */
-.banner img {
-  width: 100%;
+.banner {
+  background-image: url("../img/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* estilos para nosotros  */
@@ -363,7 +374,14 @@ h6 {
   translate: 20px;
 }
 
-.lista-ranking ol li {
+.lista-ranking-columnas {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.lista-ranking-columnas .lista-ranking ol li {
   font-size: 1.5rem;
   padding-bottom: 0.3rem;
   margin-left: 2rem;
@@ -617,7 +635,6 @@ h6 {
   }
   .separador {
     width: 40px;
-    border-bottom: 2px solid #0e0e0e;
   }
   .ranking {
     text-align: center;

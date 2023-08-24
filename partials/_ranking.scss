@@ -42,15 +42,18 @@
 
  }
 
-.lista-ranking {
-    
-    ol {
-    
-        li { 
-                font-size: 1.5rem;
-                padding-bottom: 0.3rem;
-                margin-left: 2rem;
+.lista-ranking-columnas {
+    @include flex-contenedores;
+
+        .lista-ranking {
+            
+            ol {
+            
+                li { 
+                        font-size: 1.5rem;
+                        padding-bottom: 0.3rem;
+                        margin-left: 2rem;
+                }
+            }
         }
     }
-}
-

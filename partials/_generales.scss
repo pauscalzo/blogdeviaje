@@ -68,8 +68,7 @@ h4 {
     font-size: 1.5rem;
     font-weight: 300;
     line-height: 2rem;
-    font-style: italic;
-    text-align: center;
+    font-style: oblique;
     padding: 15px 0px 30px 0px;
 }
 
@@ -93,11 +92,21 @@ h6 {
 .separador {
     display:inline-block;
     width: 80px;
+    border-bottom: 5px solid #ffffff;
+}
+
+.separador-black {
+    display:inline-block;
+    width: 80px;
     border-bottom: 5px solid #0e0e0e;
 }
 
 .align-c {
     text-align: center;
+}
+
+.white {
+    color: #ffffff;
 }
 
 /* padding  */

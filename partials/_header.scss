@@ -65,6 +65,8 @@
 
 /* estilos para banner  */
 
-.banner img {
-    width: 100%;
+.banner {
+    background-image: url("../img/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
